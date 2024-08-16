@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corso Django</title>
+</head>
+<body>
+    
+        
+
+    <div>
+        <h1><a href="/">Django Blog</a></h1>
+         
+    </div>
+    
+     {% for post in posts %}
+        <div>
+
+            <p>published : {{ post.published_date }}</p>
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p> {{ post.text|linebreaksbr }}</p>
+        </div>
+     {% endfor %}
+
+
+    
+
+    <div>
+
+        <p>published : 16.08.2024 , 11:52</p>
+        <h2><a href="">My first post</a></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, dicta, quidem explicabo laudantium distinctio in, quae consequuntur est alias doloremque omnis cupiditate hic dolorem sapiente labore delectus! Similique, nisi tempora!</p>
+
+    </div>
+
+    <div>
+
+        <p>published : 16.08.2024 , 11:52</p>
+        <h2><a href="">My second post</a></h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae saepe, omnis, ullam necessitatibus, nulla nisi eos alias itaque magni beatae ratione tempore! Quo rerum minus quod neque, sapiente aliquam voluptate.</p>
+    </div>
+</body>
+</html>
